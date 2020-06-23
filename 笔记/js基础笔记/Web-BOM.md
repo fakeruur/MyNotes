@@ -1,0 +1,22 @@
+## BOM
+- 常见事件
+    - 窗口事件
+        - 窗口加载（onload） window.addEventListener('load', function(){})所有加载完
+        - document.addEventListener('DOMContentLoaded', function(){})仅DOM加载完成就可以，不包括样式css图片等等
+        - onresize调整窗口大小时的加载事件  方法window.innerWidth
+ - 定时器
+    - window.setTimeout(调用函数，[延迟的毫秒数]);
+        - window可以省略的，    setTimeout(function(){},3000)
+        - clearTimeout(定时器名字);
+    - setInterval(调用函数，[延迟的毫秒数]);反复调用
+        - clearInterval
+- JS执行队列
+    - 同步和异步
+        - 同步任务在主线程，形成一个执行栈
+        - 异步任务相关的回调函数添加到任务队列，也称消息队列
+    - 事件循环
+- location对象 用于获取或设置窗体的URL并解析
+    - href host pathname search hash
+    - 案例：表单提交，另一个页面拿到search   分开传递数拿到值：substr('起点','终点')  利用分隔符分割键和值得到一个数组split
+    - location.assign跳转（重定向，记录历史可以后退） reload重新加载页面
+- navigator对象  history对象  back后退  forward前进  go
